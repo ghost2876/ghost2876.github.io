@@ -3,22 +3,23 @@
 <body>
 <h1>Assignment 3 - Introduction to Graph Layout Algorithms</h1>
 <p>JINJIAN GUO</p>
-ATTENTION: PLEASE click View Graph for checking the graph, click View Gist for checking the html and p5js code.
-		   The hyperlink of View Graph is actually where the "Open" button in View Gist navigates to.
-		   It appears to me that in some cases (e.g. the bar is too high) in View Gist you cannot see the whole picture of graph.
-		   If you check View Graph, it opens a new window only for the graph so you can see the whole graph, while View Gist only limits the graph in a small frame of its window.
-<p>on cars.csv</p>
+<p>on 0.edges, I used the below python code to transfer 0.edges(original format) into 0-new.edges(csv format)</p>
+<p>edge_original = open('0.edges')<br>
+edge_new = open('0-new.edges', 'w')<br>
+for line in edge_original:<br>
+	edge_new.write(line.replace(' ', ','))<br>
+edge_new.close()<br>
+edge_original.close()<br>
+</p>
 <br><br>
 <p>1.Force Directed Layout. For better clustering of all vertices I set higher iteration numbers, please allow 20 to 40 sec on graph displaying and 3 to 6 sec for hovering node display. It's hard to get a balance between perfect layout and short preload process.</p>
-<p><a href="https://bl.ocks.org/ghost2876/raw/7df88121ad7dfb6b7df7a11b526acc79/">View Graph</a></p>
 <p><a href="https://bl.ocks.org/ghost2876/7df88121ad7dfb6b7df7a11b526acc79">View Gist</a></p>
 <br><br>
-<p>2.Matrix Layout</p>
-<p><a href="https://bl.ocks.org/ghost2876/raw/ae2d013eb795f7f07991c7893d92afd7/">View Graph</a></p>
-<p><a href="https://bl.ocks.org/ghost2876/ae2d013eb795f7f07991c7893d92afd7">View Gist</a></p>
+<p>2.Matrix Layout. For better feeling and usage you can zoom in to 180% to 200%, please allow 10 to 12 sec on matrix displaying and 3 to 5 sec for hovering cell display. Actually due to big amount of cells the x, y axes become useless as you cannot see the label. If you want to see the whole matrix, the font size of x, y axis label should become small, that prevents you from seeing it.</p>
+<p><a href="https://bl.ocks.org/ghost2876/251a29acd5aa7f5f205338386ad04d7f">View Gist</a></p>
 <br><br>
-
-<h2>Assignment 2 - Introduction to Data Visualization in P5</h2>
+<br><br>
+<h1>Assignment 2 - Introduction to Data Visualization in P5</h1>
 <p>JINJIAN GUO</p>
 ATTENTION: PLEASE click View Graph for checking the graph, click View Gist for checking the html and p5js code.
 		   The hyperlink of View Graph is actually where the "Open" button in View Gist navigates to.
